@@ -1,2 +1,2 @@
 # M-Alpha
-jungbir.github.io/M-Aplha
+# jungbir.github.io/M-Alpha

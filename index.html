@@ -5,93 +5,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M-Alpha</title>
-    <link rel="stylesheet" href="Assets/CSS/ui.css">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
     <link rel="stylesheet" href="Assets/CSS/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <section id="mainConatiner">
-        <!-- Nav Left -->
+    <!-- Main -->
+    <section id="mainContainer">
         <nav>
-            <div> <!-- Title -->
-                <h1>M-Alpha</h1>
+            <div id="navUpperContainer">
+                <h1><a href="">M-Alpha</a></h1>
+                <div>
+                    <input type="search" name="" id="navSearch" placeholder="What Song would you like to hear?">
+                    <i class="fa-solid fa-search"></i>
+                </div>
+
             </div>
-            <div>
-                <a href="">Home</a>
-                <a href="">Your Playlist</a>
-            </div>
-            <div> <!-- Footer -->
-                <footer>
-                    Made by <br>
-                    Jungbir Singh Hanspal <br> and<br> vikhyat Gupta
-                </footer>
+            <div id="navLowerContainer">
+                <a href="" class="navLink" onclick="document.getElementById('tableContainer').style.display = 'none';"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="" class="navLink"><i class="fa-solid fa-radio"></i> Radio</a>
+                <a href="" class="navLink" onclick="document.getElementById('gridContainer').style.display = 'none';"><i class="fa-solid fa-music"></i> Playlist</a>
             </div>
         </nav>
-        <!-- Main Window -->
-        <section id="heroMain">
-            <div id="InputBox">
-                <div id="InputBoxContainer">
-                    <input type="search" name="" id="">
-                    <input type="button" value="Login">
+        <div id="heroMain">
+            <div id="heroName">
+                <h1>Home</h1>
+                <input type="button" value="Account" id="accountBtn" onclick="alert('Hello')">
+            </div>
+            <div id="heroGrid">
+                <div id="gridContainer">
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
+                    <div class="gridItem"></div>
                 </div>
             </div>
-            <div id="songBox">
-                <div id="songBoxContainer">
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                    <div class="trackInfo"></div>
-                </div>
-            </div>
-        </section>
-    </section>
-    <!-- Bottom Music Player -->
-    <section id="heroMusic">
-        <div id="musicInfo">
-            <!-- Thumbnail -->
-            <!-- Track Name/Artist -->
-            <div class="player-img">
-                <img src="" class="active" id="cover">
-            </div>
-            <div id="musicName">
-                <h1 id="music-title">R.I.P</h1>
-                <h3 id="music-artist">Croosh</h3>
+            <div id="tableContainer">
+                <table>
+                    <tr>
+                        <th style="width: 10px;">No.</th>
+                        <th>Name</th>
+                        <th style="width: 130px;">Artist</th>
+                        <th style="width: 20px;">Time</th>
+                    </tr>
+                    <tr class="tableMedia">
+                        <th class="tableNo">1.</th>
+                        <th class="tableNamw">R.I.P</th>
+                        <th class="tableArtist">Croosh</th>
+                        <th class="tableTime">02:00</th>
+                    </tr>
+                    <tr class="tableMedia">
+                        <th class="tableNo">2.</th>
+                        <th class="tableNamw"></th>
+                        <th class="tableArtist"></th>
+                        <th class="tableTime"></th>
+                    </tr>
+                    <tr class="tableMedia">
+                        <th class="tableNo">3.</th>
+                        <th class="tableNamw"></th>
+                        <th class="tableArtist"></th>
+                        <th class="tableTime"></th>
+                    </tr>
+                    <tr class="tableMedia">
+                        <th class="tableNo">4.</th>
+                        <th class="tableNamw"></th>
+                        <th class="tableArtist"></th>
+                        <th class="tableTime"></th>
+                    </tr>
+                    <tr class="tableMedia">
+                        <th class="tableNo">5.</th>
+                        <th class="tableNamw"></th>
+                        <th class="tableArtist"></th>
+                        <th class="tableTime"></th>
+                    </tr>
+                    <tr class="tableMedia">
+                        <th class="tableNo">6.</th>
+                        <th class="tableNamw"></th>
+                        <th class="tableArtist"></th>
+                        <th class="tableTime"></th>
+                    </tr>
+                    <tr class="tableMedia">
+                        <th class="tableNo">7.</th>
+                        <th class="tableNamw"></th>
+                        <th class="tableArtist"></th>
+                        <th class="tableTime"></th>
+                    </tr>
+                    <tr class="tableMedia">
+                        <th class="tableNo">8.</th>
+                        <th class="tableNamw"></th>
+                        <th class="tableArtist"></th>
+                        <th class="tableTime"></th>
+                    </tr>
+                </table>
             </div>
         </div>
-        <div id="musicTimeline">
-            <!-- The time left thing -->
-
+    </section>
+    <!-- MUSIC PLAYER -->
+    <section id="musicPlayer">
+        <div class="trackProgress" id="trackProgress">
             <div class="progress" id="progress"></div>
             <div class="music-duration">
                 <span id="current-time">0:00</span>
                 <span id="duration">0:00</span>
             </div>
-
         </div>
-        <div id="musicControl">
-            <!-- Shuffle/Repeat -->
+        <div id="InfoControl">
+            <div id="trackInfo">
+                <div id="trackImg">R.I.P</div>
+                <div id="trackname">Croosh</div>
+            </div>
 
-            <i class="fa-solid fa-backward" title="Previous" id="prev"></i>
-            <i class="fa-solid fa-play play-button" title="Play" id="play"></i>
-            <i class="fa-solid fa-forward" title="Next" id="next"></i>
-
+            <div class="trackControls">
+                <i class="fa-solid fa-shuffle" title="Shuffle" id="shuffle"></i>
+                <i class="fa-solid fa-backward" title="Previous" id="prev"></i>
+                <i class="fa-solid fa-play play-button" title="Play" id="play"></i>
+                <i class="fa-solid fa-forward" title="Next" id="next"></i>
+                <i class="fa-solid fa-repeat" title="Repeat" id="repeat"></i>
+            </div>
         </div>
+
     </section>
 </body>
 

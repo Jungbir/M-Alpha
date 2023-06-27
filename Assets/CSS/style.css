@@ -1,0 +1,175 @@
+/* #0D1B2A */
+/* #1B263B */
+/* #415A77 */
+/* #778DA9 */
+/* #E0E1DD */
+body {
+    margin: 0;
+    overflow-y: hidden;
+    color: #E0E1DD;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* MAIN */
+#mainContainer {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    border-bottom: 1px solid #778DA9;
+}
+
+nav {
+    background-color: #1B263B;
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+    align-items: center;
+    gap: 1em;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #E0E1DD;
+}
+
+#navUpperContainer {
+    border-bottom: 1px solid #778DA9;
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+}
+
+#navUpperContainer h1 {
+    font-size: 32px;
+}
+
+#navSearch {
+    border-radius: 30px;
+    width: 15vw;
+    height: 3vh;
+    padding: 10px;
+    color: #1B263B;
+    border: #778DA9 1px solid;
+}
+
+#navLowerContainer {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    gap: 2em;
+}
+
+.navLink {
+    font-size: 24px;
+}
+
+#heroMain {
+    background: #0D1B2A;
+    width: 82vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#heroName {
+    height: 15%;
+    border-bottom: 1px solid #778DA9;
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#heroName h1 {
+    font-size: 32px;
+}
+
+#accountBtn {
+    border-radius: 32px 32px 32px 32px;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #778DA9;
+    background-color: #415A77;
+    color: #E0E1DD;
+
+}
+
+#heroGrid {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#gridContainer {
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 2em;
+}
+
+.gridItem {
+    height: 200px;
+    width: 180px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.gridItem:hover{
+    height: 200px;
+    width: 180px;
+    border: 1px solid #778DA9;
+    border-radius: 10px;
+}
+
+#tableContainer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #778DA9;
+    text-align: left;
+    padding: 8px;
+}
+
+.tableMedia :hover {
+    color: #415A77;
+    padding: 10px;
+
+}
+
+/* MUSIC PLAYER */
+#musicPlayer {
+    background-color: #415A77;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#InfoControl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}

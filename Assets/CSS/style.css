@@ -61,7 +61,8 @@ nav a {
 }
 
 .navLink {
-    font-size: 24px;
+    font-size: 22px;
+    cursor: pointer;
 }
 
 #heroMain {
@@ -100,7 +101,7 @@ nav a {
 }
 
 #gridContainer {
-    width: 80%;
+    width: 100%;
     height: 85%;
     display: grid;
     justify-content: center;

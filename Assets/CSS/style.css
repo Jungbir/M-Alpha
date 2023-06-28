@@ -13,7 +13,7 @@ body {
 /* MAIN */
 #mainContainer {
     width: 100vw;
-    height: 85vh;
+    height: 88vh;
     display: flex;
     border-bottom: 1px solid #778DA9;
 }
@@ -88,10 +88,10 @@ nav a {
 }
 
 #accountBtn {
-    border-radius: 10px;
-    width: 60px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border: 1px solid #778DA9;
+    border-radius: 32px 32px 32px 32px;
     background-color: #415A77;
     color: #E0E1DD;
     display: flex;
@@ -120,7 +120,7 @@ nav a {
     border-radius: 10px;
 }
 
-.gridItem:hover{
+.gridItem:hover {
     height: 200px;
     width: 180px;
     border: 1px solid #778DA9;
@@ -160,7 +160,7 @@ th {
 #musicPlayer {
     background-color: #415A77;
     width: 100vw;
-    height: 15vh;
+    height: 12vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -168,9 +168,40 @@ th {
 
 }
 
+#trackProgress {
+    padding-top: 10px;
+}
+
 #InfoControl {
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     gap: 5em;
+    padding-bottom: 5px;
+}
+
+#trackInfo {
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2em;
+
+}
+
+#trackImg {
+    width: 64px;
+    height: 64px;
+
+}
+
+#trackControls {
+    display: flex;
+    gap: 1em;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+
 }

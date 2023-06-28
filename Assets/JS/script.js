@@ -14,7 +14,7 @@ home.addEventListener('click', () => {
 })
 
 playlist.addEventListener('click', () => {
-    playlistContainer.style.display = 'block';
+    playlistContainer.style.display = 'flex';
     homeContainer.style.display = 'none';
     heroHead.innerText = 'Your Playlist'
 })

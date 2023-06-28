@@ -129,13 +129,12 @@ nav a {
 #tableContainer {
     width: 80%;
     height: 85%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     overflow-y: scroll;
     padding-top: 25px;
     padding-bottom: 25px;
-    display: none;
 }
 
 table {

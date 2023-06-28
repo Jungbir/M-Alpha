@@ -114,17 +114,30 @@ nav a {
 }
 
 .gridItem {
-    height: 200px;
+    height: 210px;
     width: 180px;
-    border: 1px solid red;
     border-radius: 10px;
+    border: 1px solid #415A77;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .gridItem:hover {
-    height: 200px;
+    height: 210px;
     width: 180px;
     border: 1px solid #778DA9;
     border-radius: 10px;
+    background-color: #778DA9;
+    color: #0D1B2A;
+}
+
+.gridImg img {
+    width: 150px;
+    height: 160px;
+    border-radius: 10px;
+    margin-top: 10px;
+    object-fit: cover;
 }
 
 #tableContainer {
@@ -136,24 +149,6 @@ nav a {
     overflow-y: scroll;
     padding-top: 25px;
     padding-bottom: 25px;
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td,
-th {
-    border: 1px solid #778DA9;
-    text-align: left;
-    padding: 8px;
-}
-
-.tableMedia :hover {
-    color: #415A77;
-    padding: 10px;
-
 }
 
 /* MUSIC PLAYER */
@@ -170,6 +165,19 @@ th {
 
 #trackProgress {
     padding-top: 10px;
+    width: 100%;
+}
+
+#music-duration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+}
+
+#time-range {
+    width: 90vw;
 }
 
 #InfoControl {
@@ -178,7 +186,7 @@ th {
     justify-content: center;
     align-items: center;
     gap: 5em;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 #trackInfo {
@@ -190,10 +198,12 @@ th {
 
 }
 
-#trackImg {
+#trackImg img {
     width: 64px;
     height: 64px;
     border-radius: 10px;
+    border: 1px solid limegreen;
+    object-fit: cover;
 }
 
 #trackControls {
@@ -203,5 +213,4 @@ th {
     align-items: center;
     height: 100%;
     width: 50%;
-
 }

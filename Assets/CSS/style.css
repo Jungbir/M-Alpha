@@ -143,14 +143,46 @@ nav a {
 #tableContainer {
     width: 80%;
     height: 85%;
-    display: none;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow-y: scroll;
     padding-top: 25px;
     padding-bottom: 25px;
+
 }
 
+#tableTitle {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 4fr 2fr 1fr;
+    border: 1px solid;
+    text-align: center;
+}
+
+#tableTitle div {
+    border-right: 1px solid;
+    padding: 5px;
+}
+.tableInfo {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 4fr 2fr 1fr;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.tableInfo:hover {
+    color: #0D1B2A;
+    background: #778DA9;
+}
+
+
+.tableInfo div {
+    border-right: 1px solid;
+    padding: 5px;
+}
 /* MUSIC PLAYER */
 #musicPlayer {
     background-color: #415A77;

@@ -13,19 +13,21 @@ body {
 /* MAIN */
 #mainContainer {
     width: 100vw;
-    height: 88vh;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     border-bottom: 1px solid #778DA9;
 }
 
 nav {
     background-color: #1B263B;
     display: flex;
-    flex-direction: column;
-    width: 18vw;
+    width: 100vw;
+    height: 10vh;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     gap: 1em;
-
 }
 
 nav a {
@@ -33,33 +35,25 @@ nav a {
     color: #E0E1DD;
 }
 
-#navUpperContainer {
-    border-bottom: 1px solid #778DA9;
-    display: flex;
-    flex-direction: column;
-    height: 20%;
-}
-
-#navUpperContainer h1 {
+#ProjectName {
     font-size: 32px;
 }
 
 #navSearch {
     border-radius: 30px;
-    width: 15vw;
+    width: 30vw;
     height: 3vh;
     padding: 10px;
     color: #1B263B;
     border: #778DA9 1px solid;
 }
 
-#navLowerContainer {
+#navLinkContainer{
     display: flex;
-    flex-direction: column;
-    height: 60%;
+    flex-direction: row;
+    width: 20vw;
     gap: 2em;
 }
-
 .navLink {
     font-size: 22px;
     cursor: pointer;
@@ -67,7 +61,8 @@ nav a {
 
 #heroMain {
     background: #0D1B2A;
-    width: 82vw;
+    width: 100vw;
+    height: 678px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,7 +70,7 @@ nav a {
 }
 
 #heroName {
-    height: 15%;
+    height: 50px;
     border-bottom: 1px solid #778DA9;
     display: flex;
     width: 80vw;
@@ -85,19 +80,6 @@ nav a {
 
 #heroName h1 {
     font-size: 32px;
-}
-
-#accountBtn {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #778DA9;
-    border-radius: 32px 32px 32px 32px;
-    background-color: #415A77;
-    color: #E0E1DD;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
 #gridContainer {
@@ -140,54 +122,11 @@ nav a {
     object-fit: cover;
 }
 
-#tableContainer {
-    width: 80%;
-    height: 85%;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-y: scroll;
-    padding-top: 25px;
-    padding-bottom: 25px;
-
-}
-
-#tableTitle {
-    display: grid;
-    width: 90%;
-    grid-template-columns: 4fr 2fr 1fr;
-    border: 1px solid;
-    text-align: center;
-}
-
-#tableTitle div {
-    border-right: 1px solid;
-    padding: 5px;
-}
-.tableInfo {
-    display: grid;
-    width: 90%;
-    grid-template-columns: 4fr 2fr 1fr;
-    border-left: 1px solid;
-    border-bottom: 1px solid;
-}
-
-.tableInfo:hover {
-    color: #0D1B2A;
-    background: #778DA9;
-}
-
-
-.tableInfo div {
-    border-right: 1px solid;
-    padding: 5px;
-}
 /* MUSIC PLAYER */
 #musicPlayer {
     background-color: #415A77;
     width: 100vw;
-    height: 12vh;
+    height: 110px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -245,4 +184,5 @@ nav a {
     align-items: center;
     height: 100%;
     width: 50%;
+    font-size: 32px;
 }

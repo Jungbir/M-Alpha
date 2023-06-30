@@ -1,11 +1,11 @@
-// intializing home and playlist links
+// intializing home and searchbar links
 let home = document.getElementById('home')
-let playlist = document.getElementById('playlist')
+let navSearch = document.getElementById('navSearch') //changed the id to the search bar id
 let heroHead = document.getElementById('heroHead')
 
 // initializing the containers respective to the above links
 let homeContainer = document.getElementById('gridContainer')
-let playlistContainer = document.getElementById('tableContainer')
+let searchResult = document.getElementById('searchResult') // container id
 
 home.addEventListener('click', () => {
     homeContainer.style.display = 'grid';
@@ -13,8 +13,8 @@ home.addEventListener('click', () => {
     heroHead.innerText = 'Home'
 })
 
-playlist.addEventListener('click', () => {
-    playlistContainer.style.display = 'flex';
+searchResult.addEventListener('click', () => {
+    searchResult.style.display = ''; // not yet decided what type of display it is
     homeContainer.style.display = 'none';
-    heroHead.innerText = 'Your Playlist'
+    heroHead.innerText = ''//Add the title after search and also make sure that the search icon beside the search bar also works
 })

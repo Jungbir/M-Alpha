@@ -16,8 +16,11 @@
         <nav>
             <h1 id="ProjectName"><a href="">M-Alpha</a></h1>
             <div>
-                <input type="search" name="" id="navSearch" placeholder="What Song would you like to hear?">
-                <i class="fa-solid fa-search"></i>
+                <form id="form" action="">
+                    <input type="search" name="" id="navSearch" placeholder="What Song would you like to hear?"
+                        autocomplete="off">
+                    <i id="searchIcon" class="fa-solid fa-search"></i>
+                </form>
             </div>
             <div id="navLinkContainer">
                 <div id="home" class="navLink"><i class="fa-solid fa-house"></i> Home</div>
@@ -183,7 +186,7 @@
                         <h2 id="srYear">Year</h2>
                         <button id="searchResultPlay">
                             <i class="fas fa-play"></i> Play
-                          </button>
+                        </button>
 
                     </div>
                 </div>

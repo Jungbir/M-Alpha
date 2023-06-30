@@ -71,7 +71,7 @@ nav a {
 #heroMain {
     background: #0D1B2A;
     width: 100vw;
-    height: 678px;   
+    height: 768px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,7 +140,7 @@ nav a {
     gap: 2em;
     padding-top: 25px;
     padding-bottom: 25px;
-    display: flex;
+    display: none;
 }
 
 #searchResultImg {
@@ -182,16 +182,17 @@ nav a {
 #musicPlayer {
     background-color: #415A77;
     width: 100vw;
-    height: 110px;
+    height: 95px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
+    position: absolute;
+    bottom: 0;
 }
 
 #trackProgress {
-    padding-top: 10px;
+    /* padding-top: 10px; */
     width: 100%;
 }
 
@@ -212,12 +213,12 @@ nav a {
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 5em;
+    gap: 90px;
     padding-bottom: 10px;
 }
 
 #trackInfo {
-    width: 40%;
+    width: fit-content;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -239,6 +240,6 @@ nav a {
     justify-content: start;
     align-items: center;
     height: 100%;
-    width: 50%;
+    width: fit-content;
     font-size: 32px;
 }

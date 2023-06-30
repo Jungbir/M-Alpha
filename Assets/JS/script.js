@@ -1,7 +1,10 @@
 // intializing home and searchbar links
 let home = document.getElementById('home')
-let navSearch = document.getElementById('navSearch') //changed the id to the search bar id
+let searchForm = document.getElementById('form') //changed the id to the search bar id
 let heroHead = document.getElementById('heroHead')
+let searchInput = document.getElementById('navSearch')
+
+let searchIcon = document.getElementById('searchIcon')
 
 // initializing the containers respective to the above links
 let homeContainer = document.getElementById('gridContainer')
@@ -9,12 +12,21 @@ let searchResult = document.getElementById('searchResult') // container id
 
 home.addEventListener('click', () => {
     homeContainer.style.display = 'grid';
-    playlistContainer.style.display = 'none';
-    heroHead.innerText = 'Home'
+    searchResult.style.display = 'none';
+    heroHead.innerText = 'Home';
 })
 
-searchResult.addEventListener('click', () => {
-    searchResult.style.display = ''; // not yet decided what type of display it is
+
+searchForm.addEventListener('submit', (e) => {
+    e.preventDefault()
     homeContainer.style.display = 'none';
-    heroHead.innerText = ''//Add the title after search and also make sure that the search icon beside the search bar also works
+    searchResult.style.display = 'flex';
+    heroHead.innerText = `search results for '${searchInput.value}'`
+})
+
+searchIcon.addEventListener('click', (e) => {
+    e.preventDefault()
+    homeContainer.style.display = 'none';
+    searchResult.style.display = 'flex';
+    heroHead.innerText = `search results for '${searchInput.value}'`
 })

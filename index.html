@@ -14,24 +14,20 @@
     <!-- Main -->
     <section id="mainContainer">
         <nav>
-            <div id="navUpperContainer">
-                <h1><a href="">M-Alpha</a></h1>
-                <div>
-                    <input type="search" name="" id="navSearch" placeholder="What Song would you like to hear?">
-                    <i class="fa-solid fa-search"></i>
-                </div>
-
+            <h1 id="ProjectName"><a href="">M-Alpha</a></h1>
+            <div>
+                <input type="search" name="" id="navSearch" placeholder="What Song would you like to hear?">
+                <i class="fa-solid fa-search"></i>
             </div>
-            <div id="navLowerContainer">
+            <div id="navLinkContainer">
                 <div id="home" class="navLink"><i class="fa-solid fa-house"></i> Home</div>
                 <a href="Assets/Radio/Radio.html" class="navLink"><i class="fa-solid fa-radio"></i> Radio</a>
-                <div id="playlist" class="navLink"><i class="fa-solid fa-music"></i> Playlist</div>
             </div>
         </nav>
+
         <div id="heroMain">
             <div id="heroName">
                 <h1 id="heroHead">Home</h1>
-                <input type="button" value="Account" id="accountBtn" onclick="alert('Hello')">
             </div>
 
             <div id="gridContainer">
@@ -177,68 +173,40 @@
                 </div>
             </div>
 
-<div id="tableContainer">
-                <div id="tableTitle">
-                    <div>Name</div>
-                    <div>Artist</div>
-                    <div>Time</div>
-                </div>
-                <div class="tableInfo">
-                    <div class="tableName">R.I.P</div>
-                    <div class="tableArtist">Croosh</div>
-                    <div class="tableTime">02:00</div>
-                </div>
-                <div class="tableInfo">
-                    <div class="tableName">R.I.P</div>
-                    <div class="tableArtist">Croosh</div>
-                    <div class="tableTime">02:00</div>
-                </div>
-                <div class="tableInfo">
-                    <div class="tableName">R.I.P</div>
-                    <div class="tableArtist">Croosh</div>
-                    <div class="tableTime">02:00</div>
-                </div>
-                <div class="tableInfo">
-                    <div class="tableName">R.I.P</div>
-                    <div class="tableArtist">Croosh</div>
-                    <div class="tableTime">02:00</div>
-                </div>
-                <div class="tableInfo">
-                    <div class="tableName">R.I.P</div>
-                    <div class="tableArtist">Croosh</div>
-                    <div class="tableTime">02:00</div>
-                </div>
+            <div id="searchResult">
+                
             </div>
         </div>
-    </section>
-    <!-- MUSIC PLAYER -->
-    <section id="musicPlayer">
-        <div class="trackProgress" id="trackProgress">
-            <div class="progress" id="progress"></div>
-            <div id="music-duration">
-                <span id="current-time">0:00</span>
-                <span><input type="range" id="time-range"></span>
-                <span id="duration">0:00</span>
+        <!-- MUSIC PLAYER -->
+        <section id="musicPlayer">
+            <div class="trackProgress" id="trackProgress">
+                <div class="progress" id="progress"></div>
+                <div id="music-duration">
+                    <span id="current-time">0:00</span>
+                    <span><input type="range" id="time-range"></span>
+                    <span id="duration">0:00</span>
+                </div>
             </div>
-        </div>
-        <div id="InfoControl">
-            <div id="trackInfo">
-                <div id="trackImg"><img src="Assets/1.jpg" alt=""></div>
-                <div>
-                    <div id="trackName">R.I.P</div>
-                    <div id="trackArtist">Croosh</div>
+            <div id="InfoControl">
+                <div id="trackInfo">
+                    <div id="trackImg"><img src="Assets/1.jpg" alt=""></div>
+                    <div>
+                        <div id="trackName">R.I.P</div>
+                        <div id="trackArtist">Croosh</div>
+                    </div>
+
                 </div>
 
+                <div id="trackControls">
+                    <i class="fa-solid fa-shuffle" title="Shuffle" id="shuffle"></i>
+                    <i class="fa-solid fa-backward" title="Previous" id="prev"></i>
+                    <i class="fa-solid fa-play play-button" title="Play" id="play"></i>
+                    <i class="fa-solid fa-forward" title="Next" id="next"></i>
+                    <i class="fa-solid fa-repeat" title="Repeat" id="repeat"></i>
+                </div>
             </div>
 
-            <div id="trackControls">
-                <i class="fa-solid fa-shuffle" title="Shuffle" id="shuffle"></i>
-                <i class="fa-solid fa-backward" title="Previous" id="prev"></i>
-                <i class="fa-solid fa-play play-button" title="Play" id="play"></i>
-                <i class="fa-solid fa-forward" title="Next" id="next"></i>
-                <i class="fa-solid fa-repeat" title="Repeat" id="repeat"></i>
-            </div>
-        </div>
+        </section>
 
     </section>
 </body>

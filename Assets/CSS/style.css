@@ -52,7 +52,7 @@ nav a {
     color: #E0E1DD;
     background: transparent;
     border: 0;
-    outline: #415A77 3px solid;
+    outline: #415A77 2px solid;
 }
 
 #navLinkContainer {
@@ -198,6 +198,7 @@ nav a {
     cursor: pointer;
     background-color: #778DA9;
     color: #E0E1DD;
+    transition: 0.3s;
 }
 
 .srInfoContainer:hover>.srPlay {
@@ -205,72 +206,24 @@ nav a {
 }
 
 .srPlay:hover {
-    background-color: #415A77;
-    border-bottom: 1px solid #778DA9;
-    color: #0D1B2A;
+    color: #778DA9;
+    background-color: #E0E1DD;
 }
 
 
 /* MUSIC PLAYER */
 #musicPlayer {
-    background-color: #415A77;
+    background-color: #282828;
     width: 100vw;
     height: 95px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: absolute;
     bottom: 0;
 }
 
-#trackProgress {
-    width: 100%;
-}
-
-#music-duration {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 1em;
-}
-
-#time-range {
-    width: 90vw;
-}
-
-#InfoControl {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 90px;
-    padding-bottom: 10px;
-}
-
-#trackInfo {
-    width: fit-content;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 2em;
-
-}
-
-#trackImg img {
-    width: 64px;
-    height: 64px;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-#trackControls {
-    display: flex;
-    gap: 1em;
-    justify-content: start;
-    align-items: center;
-    height: 100%;
-    width: fit-content;
-    font-size: 25px;
+#musicPlayer iframe {
+    position: absolute;
+    bottom: -10px;
 }

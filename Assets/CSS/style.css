@@ -3,6 +3,11 @@
 /* #415A77 */
 /* #778DA9 */
 /* #E0E1DD */
+
+* {
+    margin: 0;
+}
+
 body {
     margin: 0;
     overflow-y: hidden;
@@ -71,7 +76,7 @@ nav a {
 #heroMain {
     background: #0D1B2A;
     width: 100vw;
-    height: 768px;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,7 +87,7 @@ nav a {
     height: 50px;
     border-bottom: 1px solid #778DA9;
     display: flex;
-    width: 80vw;
+    width: 82vw;
     justify-content: space-between;
     align-items: center;
 }
@@ -101,7 +106,7 @@ nav a {
     gap: 2em;
     overflow-y: scroll;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 100px;
 }
 
 .gridItem {
@@ -135,43 +140,71 @@ nav a {
 
 
 #searchResult {
-    width: 80%;
+    width: 82%;
     height: 85%;
-    gap: 2em;
+    gap: 5px;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 70px;
     display: none;
+    overflow-y: scroll;
+    flex-direction: column;
+    align-items: center;
 }
 
-#searchResultImg {
-    width: 500px;
-    height: 520px;
+.srInfoContainer {
+    display: flex;
+    width: 70%;
+    gap: 5em;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #415A77;
+    transition: 1s;
+}
+
+.sr1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 7px;
+}
+
+.srInfoContainer Img {
+    width: 75px;
+    height: 75px;
     border-radius: 10px;
     object-fit: cover;
-    float: left;
+
 }
 
-#searchResultInfo {
-    width: 100%;
-    height: 100%;
+.srSide {
     display: flex;
     flex-direction: column;
-
-
 }
 
-#searchResultPlay {
-    width: 100px;
-    height: 40px;
+.srLower {
+    display: flex;
+    gap: 1em;
+    font-size: 12px;
+}
+
+.srPlay {
+    display: none;
+    width: 50px;
+    height: 20px;
     border-radius: 20px;
     border: 1px solid #778DA9;
-    font-size: 24px;
+    font-size: 12px;
     cursor: pointer;
     background-color: #778DA9;
     color: #E0E1DD;
 }
 
-#searchResultPlay:hover {
+.srInfoContainer:hover>.srPlay {
+    display: block;
+}
+
+.srPlay:hover {
     background-color: #415A77;
     border-bottom: 1px solid #778DA9;
     color: #0D1B2A;
@@ -192,7 +225,6 @@ nav a {
 }
 
 #trackProgress {
-    /* padding-top: 10px; */
     width: 100%;
 }
 
@@ -230,7 +262,6 @@ nav a {
     width: 64px;
     height: 64px;
     border-radius: 10px;
-    border: 1px solid limegreen;
     object-fit: cover;
 }
 
@@ -241,5 +272,5 @@ nav a {
     align-items: center;
     height: 100%;
     width: fit-content;
-    font-size: 32px;
+    font-size: 25px;
 }

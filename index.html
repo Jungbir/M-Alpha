@@ -10,15 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body>
+<body onload="randomSongsGen()">
     <!-- Main -->
     <section id="mainContainer">
         <nav>
             <h1 id="ProjectName"><a href="">M-Alpha</a></h1>
             <div>
                 <form id="form" action="">
-                    <input type="search" name="" id="navSearch" placeholder="What Song would you like to hear?"
-                        autocomplete="off">
+                    <input type="search" name="" id="navSearch" placeholder="What Song would you like to hear?">
                     <i id="searchIcon" class="fa-solid fa-search"></i>
                 </form>
             </div>
@@ -34,147 +33,233 @@
             </div>
 
             <div id="gridContainer">
-                <div class="gridItem">
-                    <div class="gridImg"><img src="Assets/1.jpg" alt=""></div>
-                    <div class="gridInfo">
-                        <div id="gridName">R.I.P</div>
-                        <div id="gridArtist">Croosh</div>
-                    </div>
-                </div>
-                <div class="gridItem">
-                    <div class="gridImg"><img src="Assets/1.jpg" alt=""></div>
-                    <div class="gridInfo">
-                        <div id="gridName">R.I.P</div>
-                        <div id="gridArtist">Croosh</div>
-                    </div>
-                </div>
-                <div class="gridItem">
-                    <div class="gridImg"><img src="Assets/1.jpg" alt=""></div>
-                    <div class="gridInfo">
-                        <div id="gridName">R.I.P</div>
-                        <div id="gridArtist">Croosh</div>
-                    </div>
-                </div>
-                <div class="gridItem">
-                    <div class="gridImg"><img src="Assets/1.jpg" alt=""></div>
-                    <div class="gridInfo">
-                        <div id="gridName">R.I.P</div>
-                        <div id="gridArtist">Croosh</div>
-                    </div>
-                </div>
-                <div class="gridItem">
-                    <div class="gridImg"><img src="Assets/1.jpg" alt=""></div>
-                    <div class="gridInfo">
-                        <div id="gridName">R.I.P</div>
-                        <div id="gridArtist">Croosh</div>
-                    </div>
-                </div>
-                <div class="gridItem">
-                    <div class="gridImg"><img src="Assets/1.jpg" alt=""></div>
-                    <div class="gridInfo">
-                        <div id="gridName">R.I.P</div>
-                        <div id="gridArtist">Croosh</div>
-                    </div>
-                </div>
-                <div class="gridItem">
-                    <div class="gridImg"><img src="Assets/1.jpg" alt=""></div>
-                    <div class="gridInfo">
-                        <div id="gridName">R.I.P</div>
-                        <div id="gridArtist">Croosh</div>
-                    </div>
-                </div>
-                <div class="gridItem">
-                    <div class="gridImg"><img src="Assets/1.jpg" alt=""></div>
-                    <div class="gridInfo">
-                        <div id="gridName">R.I.P</div>
-                        <div id="gridArtist">Croosh</div>
-                    </div>
-                </div>
-                <div class="gridItem">
-                    <div class="gridImg"><img src="Assets/1.jpg" alt=""></div>
-                    <div class="gridInfo">
-                        <div id="gridName">R.I.P</div>
-                        <div id="gridArtist">Croosh</div>
-                    </div>
-                </div>
-                <div class="gridItem">
-                    <div class="gridImg"><img src="Assets/1.jpg" alt=""></div>
-                    <div class="gridInfo">
-                        <div id="gridName">R.I.P</div>
-                        <div id="gridArtist">Croosh</div>
-                    </div>
-                </div>
-                <div class="gridItem">
-                    <div class="gridImg"><img src="Assets/1.jpg" alt=""></div>
-                    <div class="gridInfo">
-                        <div id="gridName">R.I.P</div>
-                        <div id="gridArtist">Croosh</div>
-                    </div>
-                </div>
-                <div class="gridItem">
-                    <div class="gridImg"><img src="Assets/1.jpg" alt=""></div>
-                    <div class="gridInfo">
-                        <div id="gridName">R.I.P</div>
-                        <div id="gridArtist">Croosh</div>
-                    </div>
-                </div>
-                <div class="gridItem">
-                    <div class="gridImg"><img src="Assets/1.jpg" alt=""></div>
-                    <div class="gridInfo">
-                        <div id="gridName">R.I.P</div>
-                        <div id="gridArtist">Croosh</div>
-                    </div>
-                </div>
-                <div class="gridItem">
-                    <div class="gridImg"><img src="Assets/1.jpg" alt=""></div>
-                    <div class="gridInfo">
-                        <div id="gridName">R.I.P</div>
-                        <div id="gridArtist">Croosh</div>
-                    </div>
-                </div>
-                <div class="gridItem">
-                    <div class="gridImg"><img src="Assets/1.jpg" alt=""></div>
-                    <div class="gridInfo">
-                        <div id="gridName">R.I.P</div>
-                        <div id="gridArtist">Croosh</div>
-                    </div>
-                </div>
-                <div class="gridItem">
-                    <div class="gridImg"><img src="Assets/1.jpg" alt=""></div>
-                    <div class="gridInfo">
-                        <div id="gridName">R.I.P</div>
-                        <div id="gridArtist">Croosh</div>
-                    </div>
-                </div>
-                <div class="gridItem">
-                    <div class="gridImg"><img src="Assets/1.jpg" alt=""></div>
-                    <div class="gridInfo">
-                        <div id="gridName">R.I.P</div>
-                        <div id="gridArtist">Croosh</div>
-                    </div>
-                </div>
-                <div class="gridItem">
-                    <div class="gridImg"><img src="Assets/1.jpg" alt=""></div>
-                    <div class="gridInfo">
-                        <div id="gridName">R.I.P</div>
-                        <div id="gridArtist">Croosh</div>
-                    </div>
-                </div>
+                <!-- here code goes by DOM Manipulation through API -->
             </div>
 
             <div id="searchResult">
-                <img src="/M-Alpha/Assets/1.jpg" alt="" id="searchResultImg">
-                <div id="searchResultInfo">
-                    <div>
-                        <h1 id="srTitle">Title</h1>
-                        <h2 id="srName">Artist Name</h2>
-                        <h2 id="srTime">Time</h2>
-                        <h2 id="srYear">Year</h2>
-                        <button id="searchResultPlay">
-                            <i class="fas fa-play"></i> Play
-                        </button>
-
+                <div class="srInfoContainer">
+                    <div class="sr1">
+                        <img src="Assets/1.jpg" alt="">
+                        <div class="srSide">
+                            <h4 class="srTitle">R.I.P</h4>
+                            <div class="srLower">
+                                <h4 class="srName">Croosh</h4>
+                                <hr>
+                                <h4 class="srTime">02:00</h4>
+                            </div>
+                        </div>
                     </div>
+                    <button class="srPlay">
+                        <i class="fas fa-play"></i> Play
+                    </button>
+                </div>
+                <div class="srInfoContainer">
+                    <div class="sr1">
+                        <img src="Assets/1.jpg" alt="">
+                        <div class="srSide">
+                            <h4 class="srTitle">R.I.P</h4>
+                            <div class="srLower">
+                                <h4 class="srName">Croosh</h4>
+                                <hr>
+                                <h4 class="srTime">02:00</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="srPlay">
+                        <i class="fas fa-play"></i> Play
+                    </button>
+                </div>
+                <div class="srInfoContainer">
+                    <div class="sr1">
+                        <img src="Assets/1.jpg" alt="">
+                        <div class="srSide">
+                            <h4 class="srTitle">R.I.P</h4>
+                            <div class="srLower">
+                                <h4 class="srName">Croosh</h4>
+                                <hr>
+                                <h4 class="srTime">02:00</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="srPlay">
+                        <i class="fas fa-play"></i> Play
+                    </button>
+                </div>
+                <div class="srInfoContainer">
+                    <div class="sr1">
+                        <img src="Assets/1.jpg" alt="">
+                        <div class="srSide">
+                            <h4 class="srTitle">R.I.P</h4>
+                            <div class="srLower">
+                                <h4 class="srName">Croosh</h4>
+                                <hr>
+                                <h4 class="srTime">02:00</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="srPlay">
+                        <i class="fas fa-play"></i> Play
+                    </button>
+                </div>
+                <div class="srInfoContainer">
+                    <div class="sr1">
+                        <img src="Assets/1.jpg" alt="">
+                        <div class="srSide">
+                            <h4 class="srTitle">R.I.P</h4>
+                            <div class="srLower">
+                                <h4 class="srName">Croosh</h4>
+                                <hr>
+                                <h4 class="srTime">02:00</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="srPlay">
+                        <i class="fas fa-play"></i> Play
+                    </button>
+                </div>
+                <div class="srInfoContainer">
+                    <div class="sr1">
+                        <img src="Assets/1.jpg" alt="">
+                        <div class="srSide">
+                            <h4 class="srTitle">R.I.P</h4>
+                            <div class="srLower">
+                                <h4 class="srName">Croosh</h4>
+                                <hr>
+                                <h4 class="srTime">02:00</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="srPlay">
+                        <i class="fas fa-play"></i> Play
+                    </button>
+                </div>
+                <div class="srInfoContainer">
+                    <div class="sr1">
+                        <img src="Assets/1.jpg" alt="">
+                        <div class="srSide">
+                            <h4 class="srTitle">R.I.P</h4>
+                            <div class="srLower">
+                                <h4 class="srName">Croosh</h4>
+                                <hr>
+                                <h4 class="srTime">02:00</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="srPlay">
+                        <i class="fas fa-play"></i> Play
+                    </button>
+                </div>
+                <div class="srInfoContainer">
+                    <div class="sr1">
+                        <img src="Assets/1.jpg" alt="">
+                        <div class="srSide">
+                            <h4 class="srTitle">R.I.P</h4>
+                            <div class="srLower">
+                                <h4 class="srName">Croosh</h4>
+                                <hr>
+                                <h4 class="srTime">02:00</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="srPlay">
+                        <i class="fas fa-play"></i> Play
+                    </button>
+                </div>
+                <div class="srInfoContainer">
+                    <div class="sr1">
+                        <img src="Assets/1.jpg" alt="">
+                        <div class="srSide">
+                            <h4 class="srTitle">R.I.P</h4>
+                            <div class="srLower">
+                                <h4 class="srName">Croosh</h4>
+                                <hr>
+                                <h4 class="srTime">02:00</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="srPlay">
+                        <i class="fas fa-play"></i> Play
+                    </button>
+                </div>
+                <div class="srInfoContainer">
+                    <div class="sr1">
+                        <img src="Assets/1.jpg" alt="">
+                        <div class="srSide">
+                            <h4 class="srTitle">R.I.P</h4>
+                            <div class="srLower">
+                                <h4 class="srName">Croosh</h4>
+                                <hr>
+                                <h4 class="srTime">02:00</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="srPlay">
+                        <i class="fas fa-play"></i> Play
+                    </button>
+                </div>
+                <div class="srInfoContainer">
+                    <div class="sr1">
+                        <img src="Assets/1.jpg" alt="">
+                        <div class="srSide">
+                            <h4 class="srTitle">R.I.P</h4>
+                            <div class="srLower">
+                                <h4 class="srName">Croosh</h4>
+                                <hr>
+                                <h4 class="srTime">02:00</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="srPlay">
+                        <i class="fas fa-play"></i> Play
+                    </button>
+                </div>
+                <div class="srInfoContainer">
+                    <div class="sr1">
+                        <img src="Assets/1.jpg" alt="">
+                        <div class="srSide">
+                            <h4 class="srTitle">R.I.P</h4>
+                            <div class="srLower">
+                                <h4 class="srName">Croosh</h4>
+                                <hr>
+                                <h4 class="srTime">02:00</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="srPlay">
+                        <i class="fas fa-play"></i> Play
+                    </button>
+                </div>
+                <div class="srInfoContainer">
+                    <div class="sr1">
+                        <img src="Assets/1.jpg" alt="">
+                        <div class="srSide">
+                            <h4 class="srTitle">R.I.P</h4>
+                            <div class="srLower">
+                                <h4 class="srName">Croosh</h4>
+                                <hr>
+                                <h4 class="srTime">02:00</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="srPlay">
+                        <i class="fas fa-play"></i> Play
+                    </button>
+                </div>
+                <div class="srInfoContainer">
+                    <div class="sr1">
+                        <img src="Assets/1.jpg" alt="">
+                        <div class="srSide">
+                            <h4 class="srTitle">R.I.P</h4>
+                            <div class="srLower">
+                                <h4 class="srName">Croosh</h4>
+                                <hr>
+                                <h4 class="srTime">02:00</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="srPlay">
+                        <i class="fas fa-play"></i> Play
+                    </button>
                 </div>
             </div>
         </div>
@@ -185,7 +270,7 @@
                 <div id="music-duration">
                     <span id="current-time">0:00</span>
                     <span><input type="range" id="time-range"></span>
-                    <span id="duration">0:00</span>
+                    <span id="duration">2:00</span>
                 </div>
             </div>
             <div id="InfoControl">

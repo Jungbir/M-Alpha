@@ -1,8 +1,4 @@
-/* #0D1B2A */
-/* #1B263B */
-/* #415A77 */
-/* #778DA9 */
-/* #E0E1DD */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 * {
     margin: 0;
@@ -12,7 +8,7 @@ body {
     margin: 0;
     overflow-y: hidden;
     color: #E0E1DD;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* MAIN */

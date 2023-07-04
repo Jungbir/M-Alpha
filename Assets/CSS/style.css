@@ -219,7 +219,53 @@ nav a {
     bottom: 0;
 }
 
-#musicPlayer iframe {
-    position: absolute;
-    bottom: -10px;
+#trackProgress {
+    width: 100%;
+}
+
+#music-duration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+}
+
+#time-range {
+    width: 90vw;
+}
+
+#InfoControl {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    padding-bottom: 10px;
+}
+
+#trackInfo {
+    width: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2em;
+
+}
+
+#trackImg img {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#trackControls {
+    display: flex;
+    gap: 1em;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+    font-size: 25px;
 }
